@@ -6,4 +6,7 @@ resource "aws_instance" "one" {
 count = 5
 ami = "ami-03eb6185d756497f8"
 instance_type = "t2.micro"
+tags = {
+Name = "Nanju-server"
+}
 }
